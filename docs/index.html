@@ -11,8 +11,37 @@
   <!-- Header -->
   <header>
     <div class="header-content">
-      <a href="index.html" class="logo">C<span>Staks</span></a>
+      <a href="index.html" class="logo-link">
+        <svg id="cstaks-logo" width="240" height="64" preserveAspectRatio="xMidYMid meet" viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ffffff" />
+              <stop offset="30%" stop-color="#ffffff" />
+              <stop offset="30%" stop-color="#e94560" />
+              <stop offset="100%" stop-color="#e94560" />
+            </linearGradient>
+            <linearGradient id="gradSubText" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#e94560" />
+              <stop offset="100%" stop-color="#ff7382" />
+            </linearGradient>
+            <filter id="glow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+          </defs>
+          
+          <!-- Text -->
+          <g class="animated-text">
+            <text x="10" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="62" font-weight="900"><tspan fill="#ffffff">C</tspan><tspan fill="#e94560">Staks</tspan></text>
+            <text x="15" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="url(#gradSubText)">DEVELOPMENT</text>
+          </g>
+        </svg>
+      </a>
       <nav>
+        <a href="index.html">Home</a>
         <a href="#about">About</a>
         <a href="contact.html">Contact Us</a>
         <a href="https://github.com/CStaks" target="_blank" rel="noopener noreferrer">GitHub</a>

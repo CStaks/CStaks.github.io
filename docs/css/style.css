@@ -28,11 +28,49 @@ body {
 header {
   background: var(--primary);
   color: white;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- CStaks Animated Tech Logo --- */
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#cstaks-logo {
+  height: 48px; /* Scale down for nav header */
+  width: auto;
+  overflow: visible;
+  filter: drop-shadow(0 0 12px rgba(233, 69, 96, 0.3));
+  transition: filter 0.3s ease;
+}
+
+#cstaks-logo:hover {
+  filter: drop-shadow(0 0 16px rgba(233, 69, 96, 0.6));
+}
+
+/* Text Animation */
+.animated-text {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeSlideText 0.6s ease-out 0.2s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeSlideText {
+  0% {
+    opacity: 0;
+    transform: translateX(20px) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
 }
 
 .header-content {
