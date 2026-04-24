@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CStaks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        input,
+        textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .form-submit:hover {
+            background: #d63749;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">C<span>Staks</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="https://github.com/CStaks" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Have questions? Want to collaborate? We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container contact-container">
+            <div class="contact-section">
+
+                <!-- Contact Information -->
+
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong>GitHub:</strong><br>
+                        <a href="https://github.com/CStaks" target="_blank">github.com/CStaks</a>
+                    </p>
+                    <p>
+                        <strong>Community:</strong><br>
+                        Chat with us or our community with <a href="https://github.com/orgs/CStaks/discussions" target="_blank">GitHub Discussions</a>!
+                    </p>
+                    <p>
+                        <strong>Response Time:</strong><br>
+                        We typically respond to inquiries within 1-2 business days.
+                    </p>
+                </div>
+
+                <!-- Contact MEEE!!!! -->
+
+                <div class="contact-info">
+                    <h3>Contact the Owner</h3>
+                    <p>
+                        <strong>Callen</strong><br>
+                        Founder & Lead Developer
+                    </p>
+                    <p style="margin-top: 2rem;">
+                        <a href="https://callen.is-a.dev" target="_blank"
+                            style="display: block; margin-bottom: 0.8rem;">🌐 Website</a>
+                        <a href="mailto:callen.flynn@proton.me" style="display: block; margin-bottom: 0.8rem;">📧
+                            Email</a>
+                        <a href="https://discord.com/users/1409705687159668736" target="_blank"
+                            style="display: block;">💬 Discord</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feeeet mmmmm -->
+
+    <footer>
+        <p>&copy; 2026 CStaks. All rights reserved.</p>
+        <p>Built with ❤️ by the CStaks team • <a href="https://github.com/CStaks" target="_blank">Visit us on GitHub</a>
+            • <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
