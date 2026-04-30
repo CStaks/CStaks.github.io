@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - CStaks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .project-section {
+            margin-bottom: 4rem;
+        }
+
+        .project-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .project-card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-card h3 {
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .project-card p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background: #d63749;
+            transform: translateY(-2px);
+        }
+        
+        .empty-state {
+            color: #666;
+            font-style: italic;
+        }
+        
+        /* Dark mode compatibility if any exists within scope */
+        @media (prefers-color-scheme: dark) {
+            .project-card p, .empty-state {
+                color: #ccc;
+            }
+            .project-section h2 {
+                border-bottom: 2px solid #333;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <svg id="cstaks-logo" width="240" height="64" preserveAspectRatio="xMidYMid meet" viewBox="0 0 240 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#ffffff" />
+                      <stop offset="30%" stop-color="#ffffff" />
+                      <stop offset="30%" stop-color="#e94560" />
+                      <stop offset="100%" stop-color="#e94560" />
+                    </linearGradient>
+                    <linearGradient id="gradSubText" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#e94560" />
+                      <stop offset="100%" stop-color="#ff7382" />
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                  </defs>
+                  
+                  <!-- Text -->
+                  <g class="animated-text">
+                    <text x="10" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="62" font-weight="900"><tspan fill="#ffffff">C</tspan><tspan fill="#e94560">Staks</tspan></text>
+                    <text x="15" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" letter-spacing="4" fill="url(#gradSubText)">DEVELOPMENT</text>
+                  </g>
+                </svg>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="projects.html">Projects</a>
+                <a href="https://github.com/CStaks" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Explore the software and tools built by CStaks.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section>
+        <div class="container projects-container">
+            <!-- Core -->
+            <div class="project-section">
+                <h2>Core</h2>
+                <div class="project-card">
+                    <h3>CalyxOS</h3>
+                    <p>
+                        An opinionated Debian flavor. Essentially a script that turns Debian into a completely different OS. It redoes everything from installing a custom desktop environment and specific applications to adding a custom splash screen, swapping out package repositories, and fundamentally changing pretty much everything the user interacts with.
+                    </p>
+                    <a href="https://github.com/CStaks" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+
+            <!-- Labs -->
+            <div class="project-section">
+                <h2>Labs</h2>
+                <p class="empty-state">Experimental and incubating projects will be listed here.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CStaks. All rights reserved.</p>
+        <p>Built with ❤️ by the CStaks team • <a href="https://github.com/CStaks" target="_blank">Visit us on GitHub</a> • <a href="contact.html" target="_blank">Contact Us</a></p>
+    </footer>
+</body>
+</html>
